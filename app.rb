@@ -13,7 +13,7 @@ post '/new'  do
 params[:pirate][:ships].each do |ship_hash|
   Ship.new(ship_hash)
 end
-@ships=Ship.all
+@ships = Ship.all
   erb  :'pirates/show'
 end
 
