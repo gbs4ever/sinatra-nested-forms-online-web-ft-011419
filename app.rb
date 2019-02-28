@@ -8,7 +8,7 @@ end
   get '/new' do
     erb :'pirates/new'
   end
-post '/new'  do
+post '/pirates'  do
 @pirate = Pirate.new(params[:pirate])
 params[:pirate][:ships].each do |ship_hash|
   Ship.new(ship_hash)
